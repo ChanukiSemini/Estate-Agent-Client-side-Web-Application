@@ -29,8 +29,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         >
           <option value="">Any</option>
           <option value="House">House</option>
-          <option value="Bunglow">Bunglow</option>
-          <option value="Flat">Flat</option>
+          <option value="Flat">Apartment</option>
 
         </select>
         <br/><br/>
