@@ -6,22 +6,23 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
       <h1>Believe in Finding it</h1>
       <h3>Search for the property you are looking for</h3>
 
-      <form>
+      <form className="search-form">
         {/* Location Filter*/}
         <label>Postcode area</label><br/>
         <input
           type="search"
           placeholder="e.g. 00300,Colpetty"
-          value={searchTerm.postcodeArea}
+          value={searchTerm.location}
           onChange={(e) =>
-            setSearchTerm({ ...searchTerm, postcodeArea: e.target.value })
+            setSearchTerm({ ...searchTerm, location: e.target.value })
           }
         />
-        <br/><br/>
+        
 
         {/* Property Type Filter*/}
         <label>Property Type</label><br/>
         <select
+          className="sproperty-select-field"
           value={searchTerm.type}
           onChange={(e) =>
             setSearchTerm({ ...searchTerm, type: e.target.value })
@@ -29,10 +30,10 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         >
           <option value="">Any</option>
           <option value="House">House</option>
-          <option value="Flat">Apartment</option>
+          <option value="Apartment">Apartment</option>
 
         </select>
-        <br/><br/>
+        
 
         {/* Bedrooms Filter*/}
         <label>Minimum Bedrooms Requirement</label><br/>
@@ -73,9 +74,9 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         {/* Year Filter */}
         <label>Show properties Added after</label><br/>
         <select
-          value={searchTerm.addedAfter}
+          value={searchTerm.year}
           onChange={(e) =>
-            setSearchTerm({ ...searchTerm, addedAfter: e.target.value })
+            setSearchTerm({ ...searchTerm, year: e.target.value })
           }
         >
           <option value="">All Years</option>
@@ -85,7 +86,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         </select>
         <br/><br/>
 
-        <button type="button">Search</button>
+        <button type="button" className="search-button">Search</button>
       </form>
     </section>
   );

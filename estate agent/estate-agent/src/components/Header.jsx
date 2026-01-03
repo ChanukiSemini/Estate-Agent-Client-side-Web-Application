@@ -1,0 +1,28 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="site-brand">
+        <Link to="/" className="site-title">
+          Estate Agent
+        </Link>
+        
+      </div>
+
+      <nav className="main-nav">
+        <ul>
+          <li>
+            <a href="#search-bar">Search</a>
+          </li>
+          <li>
+            <a href="#favourites">Favourites</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;

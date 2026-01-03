@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import {useParams} from "react-router-dom";
-import {Tab,Tabs,TabList,TabPanel} from "react-rou"
+import {Tab, Tabs,TabList,TabPanel } from "react-tabs"
 
 const PropertyPage = () => {
   const {id} = useParams();
@@ -44,7 +44,7 @@ const PropertyPage = () => {
              ))}
         </div>
       </div>
-      <Tabs>
+        <Tabs>
         <TabList>
           <Tab>Description</Tab>
           <Tab>Floor Plan</Tab>
@@ -71,6 +71,9 @@ const PropertyPage = () => {
           </div>
         </TabPanel>
       </Tabs>
+      
+    
+      
       
     </section>
     

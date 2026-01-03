@@ -14,7 +14,9 @@
                 "images/house1_1.jpg",
                 "images/house1_2.jpg",
                 "images/house1_3.jpg",
-                "images/house1_4.jpg"
+                "images/house1_4.jpg",
+                "images/house1_5.jpg",
+                "images/house1_6.jpg"
             ],
 
             "floorplan": "images/house1_floorplan.jpg",
@@ -38,7 +40,11 @@
             "images": [
                 "images/apartment1_1.jpg",
                 "images/apartment1_2.jpg",
-                "images/apartment1_3.jpg"
+                "images/apartment1_3.jpg",
+                "images/apartment1_4.jpg",
+                "images/apartment1_5.jpg",
+                "images/apartment1_6.jpg",
+                "images/apartment1_7.jpg"
             ],
             "floorplan": "images/apartment1_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Rajagiriya+Sri+Lanka&output=embed",
@@ -61,7 +67,9 @@
                 "images/house2_1.jpg",
                 "images/house2_2.jpg",
                 "images/house2_3.jpg",
-                "images/house2_4.jpg"
+                "images/house2_4.jpg",
+                "images/house2_5.jpg",
+                "images/house2_6.jpg"
             ],
             "floorplan": "images/house2_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Nawala+Sri+Lanka&output=embed",
@@ -82,7 +90,11 @@
             "thumbnail": "images/apartment2_thumb.jpg",
             "images": [
                 "images/apartment2_1.jpg",
-                "images/apartment2_2.jpg"
+                "images/apartment2_2.jpg",
+                "images/apartment2_3.jpg",
+                "images/apartment2_4.jpg",
+                "images/apartment2_5.jpg",
+                "images/apartment2_6.jpg"
             ],
             "floorplan": "images/apartment2_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Dehiwala+Sri+Lanka&output=embed",
@@ -104,7 +116,10 @@
             "images": [
                 "images/house3_1.jpg",
                 "images/house3_2.jpg",
-                "images/house3_3.jpg"
+                "images/house3_3.jpg",
+                "images/house3_4.jpg",
+                "images/house3_5.jpg",
+                "images/house3_6.jpg"
             ],
             "floorplan": "images/house3_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Kaduwela+Sri+Lanka&output=embed",
@@ -125,7 +140,11 @@
             "thumbnail": "images/apartment3_thumb.jpg",
             "images": [
                 "images/apartment3_1.jpg",
-                "images/apartment3_2.jpg"
+                "images/apartment3_2.jpg",
+                "images/apartment3_3.jpg",
+                "images/apartment3_4.jpg",
+                "images/apartment3_5.jpg",
+                "images/apartment3_6.jpg"
             ],
             "floorplan": "images/apartment3_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Mount+Lavinia+Sri+Lanka&output=embed",
@@ -147,7 +166,11 @@
             "images": [
                 "images/house4_1.jpg",
                 "images/house4_2.jpg",
-                "images/house4_3.jpg"
+                "images/house4_3.jpg",
+                "images/house4_4.jpg",
+                "images/house4_5.jpg",
+                "images/house4_6.jpg",
+                "images/house4_7.jpg"
             ],
             "floorplan": "images/house4_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Battaramulla+Sri+Lanka&output=embed",
@@ -169,7 +192,10 @@
             "images": [
                 "images/apartment4_1.jpg",
                 "images/apartment4_2.jpg",
-                "images/apartment4_3.jpg"
+                "images/apartment4_3.jpg",
+                "images/apartment4_4.jpg",
+                "images/apartment4_5.jpg",
+                "images/apartment4_6.jpg"
             ],
             "floorplan": "images/apartment4_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Malabe+Sri+Lanka&output=embed",
