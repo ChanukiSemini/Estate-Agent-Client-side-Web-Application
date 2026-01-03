@@ -7,8 +7,6 @@
             "price": 28500000,
             "tenure": "Freehold",
             "location": "Thalawathugoda, Colombo",
-            "shortTitle": "Spacious Family Home in Thalawathugoda",
-
             "description": "This beautifully maintained four bedroom family home is located in a calm residential neighbourhood in Thalawathugoda. The property features a bright living area, a modern fitted kitchen with dining space, and a private landscaped garden ideal for family gatherings. Upstairs includes four well sized bedrooms with natural lighting and ventilation. The house is conveniently located close to international schools, supermarkets, hospitals and easy access to Colombo city.",
 
             "thumbnail": "images/house1_thumb.jpg",
@@ -35,7 +33,6 @@
             "price": 19500000,
             "tenure": "Freehold",
             "location": "Rajagiriya, Colombo",
-            "shortTitle": "Modern City Apartment in Rajagiriya",
             "description": "A stylish three bedroom apartment located in the heart of Rajagiriya offering comfortable city living. The apartment includes an open plan living and dining area, a fully equipped modern kitchen and a balcony with city views. Residents benefit from 24 hour security, elevator access, parking facilities and proximity to offices, shopping malls and restaurants.",
             "thumbnail": "images/apartment1_thumb.jpg",
             "images": [
@@ -58,7 +55,6 @@
             "price": 42000000,
             "tenure": "Freehold",
             "location": "Nawala, Colombo",
-            "shortTitle": "Luxury Five Bedroom Residence in Nawala",
             "description": "This impressive five bedroom luxury residence is situated in a highly sought after area of Nawala. The property boasts spacious living areas, high ceilings, a modern pantry kitchen and a private garden. Each bedroom includes an attached bathroom, making it ideal for large families. The home is located close to main roads, leading schools and healthcare facilities.",
             "thumbnail": "images/house2_thumb.jpg",
             "images": [
@@ -82,7 +78,6 @@
             "price": 14500000,
             "tenure": "Freehold",
             "location": "Dehiwala, Colombo",
-            "shortTitle": "Comfortable Two Bedroom Apartment in Dehiwala",
             "description": "A well designed two-bedroom apartment located in Dehiwala, ideal for small families or professionals. The property offers a cozy living space, a functional kitchen and easy access to public transport. Located close to schools, beaches and supermarkets, this apartment offers convenience and value.",
             "thumbnail": "images/apartment2_thumb.jpg",
             "images": [
@@ -104,7 +99,6 @@
             "price": 17500000,
             "tenure": "Freehold",
             "location": "Kaduwela",
-            "shortTitle": "Newly Built House in Kaduwela",
             "description": "This newly constructed three bedroom house offers modern living in a rapidly developing area of Kaduwela. The house features an open living area, contemporary finishes and ample natural light. Located close to highways and essential services, it is ideal for first time home buyers.",
             "thumbnail": "images/house3_thumb.jpg",
             "images": [
@@ -127,7 +121,6 @@
             "price": 9800000,
             "tenure": "Freehold",
             "location": "Mount Lavinia",
-            "shortTitle": "Sea View Apartment in Mount Lavinia",
             "description": "A compact one bedroom apartment offering beautiful sea views in Mount Lavinia. Ideal for professionals or investors, the apartment features a modern layout, balcony, and secure parking. Located within walking distance to the beach, cafes and public transport.",
             "thumbnail": "images/apartment3_thumb.jpg",
             "images": [
@@ -149,7 +142,6 @@
             "price": 68000000,
             "tenure": "Freehold",
             "location": "Battaramulla",
-            "shortTitle": "Executive Residence in Battaramulla",
             "description": "An executive six bedroom residence located in a prestigious area of Battaramulla. The property includes expansive living spaces, staff quarters, multiple balconies and secure parking. Ideal for diplomatic or executive level living, with close proximity to government institutions and expressways.",
             "thumbnail": "images/house4_thumb.jpg",
             "images": [
@@ -172,7 +164,6 @@
             "price": 22500000,
             "tenure": "Freehold",
             "location": "Malabe",
-            "shortTitle": "Family Friendly Apartment in Malabe",
             "description": "A spacious three bedroom apartment located in Malabe, suitable for families seeking modern living outside Colombo city. The apartment features a large living area, modern kitchen and secure environment. Located close to IT parks, universities and shopping centres.",
             "thumbnail": "images/apartment4_thumb.jpg",
             "images": [
