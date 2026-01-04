@@ -8,7 +8,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
 
         <form className="search-form">
           {/* Location Filter*/}
-          <label>Postcode area</label>
+          <label>Location / postcode</label>
           <input
             type="search"
             placeholder="e.g. 00300,Colpetty"
