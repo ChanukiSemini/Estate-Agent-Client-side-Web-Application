@@ -16,8 +16,9 @@ const Favourites = ({favourites,removeFavourite,clearFavourites,addToFavourites}
         onDragOver={(e)=>e.preventDefault()}
         onDrop={handleDrop}
     >
-           <div className="favuriteHeader">
+           <div className="favouriteHeader">
             <h3>Favourites</h3>
+      
            </div>
            {favourites.length === 0 && <p>Drag and Drop properties Here..</p>}
 

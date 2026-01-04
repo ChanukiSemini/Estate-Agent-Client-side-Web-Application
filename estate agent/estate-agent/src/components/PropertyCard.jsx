@@ -26,28 +26,29 @@ const  PropertyCard= ({property,addToFavourites}) => {
     <article className="property-card" draggable onDragStart={handleDraggingStart}>
         {/*Thumbnail Images */}
         <div className="full-Property-card">
-            <img 
-            src={`/${thumbnail}`} 
-            alt={type} 
-            className='property-thumbnail' 
-            />
+          <div className='property-image'>
+              <img 
+              src={`/${thumbnail}`} 
+              alt={type} 
+              className='property-thumbnail' 
+              />
+            </div>
 
             <div className='property-info'>
+              <h3 className='property-price'>RS. {price.toLocaleString()}</h3>
+              <p className='property-tenure'>{tenure}</p>
+              <p className='property-type'>{type}</p>
+              <p className='property-location'>{location}</p>
+              <p className='property-beds'>{bedrooms} Bedrooms</p>
+              <p className="property-Description">{description}</p>
+              <p className='property-year'>Added: {added.month}{added.day},{added.year}</p>
 
-              <p>{type}</p>
-              <p>RS. {price.toLocaleString()}</p>
-              <p>{bedrooms}</p>
-              <p>{tenure}</p>
-              <p>{location}</p>
-              <p className="propertyDescription">{description}</p>
-              <p>{added.month}{added.day},{added.year}</p>
-
-              <div className="viewPropertyBtn">
-                <Link to={`/property/${id}`} className="btn btn-outline-primary btn-sm me-2">
+              <div className="card-buttons">
+                <Link to={`/property/${id}`} className="view-property-btn">
                     view property
                 </Link>
 
-                <button className="btn btn-primary btn-sm" onClick={()=>addToFavourites(property)}>
+                <button className="favourite-btn" onClick={()=>addToFavourites(property)}>
                   Add to Favourite
                 </button>
               </div>

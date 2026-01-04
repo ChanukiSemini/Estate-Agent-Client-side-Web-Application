@@ -19,22 +19,30 @@ function App() {
   const [favourites,setFavourites]=useState([]);
 
   return (
-    <Routes>
-      {/*Search */}
-      <Route path='/' element={
-        <div>
-          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-          <Gallery
-             searchTerm={searchTerm}
-             favourites={favourites}
-             setFavourites={setFavourites}
-          />
-        </div>
-      }/>
+    <>
+        <Header/>
+        <main>
+          <Routes>
+            {/*Search */}
+            <Route path='/' element={
+              <div className='main-content'>
+                <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+                <Gallery
+                  searchTerm={searchTerm}
+                  favourites={favourites}
+                  setFavourites={setFavourites}
+                />
+              </div>
+            }/>
 
-      {/*Prperty Details*/}
-      <Route path='/property/:id' element={<PropertyPage/>}/>
-    </Routes>
+            {/*Prperty Details*/}
+            <Route path='/property/:id' element={<PropertyPage/>}/>
+          </Routes>
+        </main>
+
+        <Footer/>
+
+    </>
   );
 }
 

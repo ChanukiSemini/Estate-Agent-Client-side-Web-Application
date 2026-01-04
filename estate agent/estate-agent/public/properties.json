@@ -30,7 +30,7 @@
             }
         },
         {   "id": "P002",
-            "type": "Apartment",
+            "type": "Flat",
             "bedrooms": 3,
             "price": 19500000,
             "tenure": "Freehold",
@@ -43,8 +43,7 @@
                 "images/apartment1_3.jpg",
                 "images/apartment1_4.jpg",
                 "images/apartment1_5.jpg",
-                "images/apartment1_6.jpg",
-                "images/apartment1_7.jpg"
+                "images/apartment1_6.jpg"
             ],
             "floorplan": "images/apartment1_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Rajagiriya+Sri+Lanka&output=embed",
@@ -81,7 +80,7 @@
         },
         {
             "id": "P004",
-            "type": "Apartment",
+            "type": "Flat",
             "bedrooms": 2,
             "price": 14500000,
             "tenure": "Freehold",
@@ -131,7 +130,7 @@
         },
         {
              "id": "P006",
-            "type": "Apartment",
+            "type": "Flat",
             "bedrooms": 1,
             "price": 9800000,
             "tenure": "Freehold",
@@ -169,8 +168,7 @@
                 "images/house4_3.jpg",
                 "images/house4_4.jpg",
                 "images/house4_5.jpg",
-                "images/house4_6.jpg",
-                "images/house4_7.jpg"
+                "images/house4_6.jpg"
             ],
             "floorplan": "images/house4_floorplan.jpg",
             "map": "https://www.google.com/maps?q=Battaramulla+Sri+Lanka&output=embed",
@@ -182,7 +180,7 @@
         },
         {
             "id": "P008",
-            "type": "Apartment",
+            "type": "Flat",
             "bedrooms": 3,
             "price": 22500000,
             "tenure": "Freehold",

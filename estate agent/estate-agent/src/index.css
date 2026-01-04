@@ -1,68 +1,666 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background-color:rgb(230, 224, 208);
+  color:rgb(0, 0, 0);
   line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+/*  -------Header---------*/
+.header{
+  position:fixed;
+  background-color: rgb(0, 0, 0);
+  border-bottom: rgb(32, 31, 31);
+  padding: 20px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.848);
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.site-brand{
+  display:flex;
+  align-items:center;
+
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.site-title{
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: rgb(234, 228, 213);
+  text-decoration: none;
+  transition: all 0.5 ease;
+}
+.site-title:hover {
+  color: rgb(237, 220, 178);
+  transform: translateX(-3px);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: rgb(234, 228, 213);
+  text-decoration: none;
+  font-size: 20px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  letter-spacing: 1px;
+  transition: all 0.3 ease;
+  padding: 8px 16px;
+  position: relative;
+  border-bottom: 2px solid transparent;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.main-nav a:hover {
+  color: rgb(237, 220, 178);
+  border-bottom-color: rgb(237, 220, 178);
+  
+}
+.main-content{
+  padding-top: 40px;
+  
+}
+
+/* -----Search Bar ---------*/
+#search-bar{
+  background-image: url("images/house3_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+  padding: 80px 8%;
+  color: white;
+  position: relative;
+  
+
+}
+
+
+/* Headings */
+#search-bar h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: rgb(237, 220, 178);
+}
+
+#search-bar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  color: white;
+}
+
+
+/* Form Container */
+.search-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: rgb(230, 224, 208);
+  padding: 24px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.147);
+  text-align: left;
+}
+
+/* Labels */
+.search-form label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+/* Inputs & Selects */
+.search-form input,
+.search-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+  outline: none;
+  border-color:black;
+}
+
+/* Price Range Inputs */
+.search-form input[type="number"] {
+  width: 48%;
+}
+
+.search-form input[type="number"]:first-of-type {
+  margin-right: 4%;
+}
+
+/* Search Button */
+.search-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgb(79, 68, 41);
+  box-shadow: 0 4px 10px rgba(79, 68, 41, 0.441);
+}
+
+
+/*------Gallery-------*/
+.gallery {
+  display: flex;
+  min-height: 800px;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.main-gallery {
+  flex: 1;
+}
+
+/* property card grid*/
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.No-result {
+  font-size: 1.2rem;
+  color: #fcfcfc;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.467);
+  text-align: center;}
+
+
+/*---property card styling---*/
+
+/* ===== Modern Property Card ===== */
+
+.property-card {
+  background: rgb(211, 201, 174);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.418);
+}
+
+/* Image */
+.property-image {
+  position: relative;
+  height: 200px;
+}
+
+.property-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Content */
+.property-info{
+  padding:18px;
+  padding-left: 5px;
+}
+
+.property-price {
+  font-size: 1.8rem;
+  color: rgb(73, 67, 50);
+  font-weight: 900;
+  margin: 0px;
+}
+
+.property-type {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.property-tenure{
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.property-beds,
+.property-location {
+  font-size: 1.1rem;
+  color: #3b3a3a;
+}
+
+.property-Description {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.property-year{
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+/* ===== Property Card Buttons ===== */
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  gap: px;
+}
+
+/* View Property Button */
+.view-property-btn {
+  padding: 7px 16px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  text-align: center;
+  height: 50px;
+  width:200px;
+}
+
+.view-property-btn:hover {
+  background-color: black;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(65, 60, 47, 0.553);
+}
+
+/* Add to Favourite Button */
+.favourite-btn {
+  height:50px;
+  width:200px;
+  margin-left: 5px;
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color:black;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.favourite-btn:hover {
+  background-color: rgb(60, 59, 59);
+  box-shadow: 0 4px 10px rgba(21, 21, 21, 0.441);
+}
+
+
+/* favourites sidebar*/
+.favourite-Sidebar {
+  width: 350px;
+  background: rgb(211, 201, 174);
+  padding: 30px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: fit-content;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.434);
+  position: sticky;
+  top: 100px;
+}
+
+.favouriteHeader h3 {
+  margin-bottom: 14px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-align: center;
+}
+.favouriteHeader{
+  border-bottom: 1px solid rgb(73, 67, 50);
+}
+
+.favourite-item {
+  background: rgb(173, 164, 136);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fav-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fav-info-firstpart {
+  display: flex;
+  gap: 15px;
+}
+.fav-thumb {
+  width: 70px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.fav-details p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.fav-price {
+  font-weight: bold;
+}
+
+.btn-remove {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #0b0b0b;
+  
+}
+
+.btn-remove:hover{
+  
+  background-color: rgba(0, 0, 0, 0.208);
+}
+
+.clear-Button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+/*------view property page-----*/
+.propertyPageSection{
+  padding: 10px;
+  max-width: 1200px;
+  margin: 100px auto 40px auto;
+  
+}
+
+.PropertyDetails {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.PropertyDetails h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+}
+
+.PropertyDetails h2 {
+  font-size: 1.8rem;
+  color: rgb(73, 67, 50);
+  font-weight: 900;
+  margin: 0px;
+}
+
+.PropertyDetails h3 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.propertyGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+  height: 700px;
+}
+
+.mainImage{
+  
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 40, 84, 0.1);
+}
+.mainImage img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+.other-images {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding-right: 5px;
+  height:fit-content
+}
+
+.other-images img {
+  width: 200px;
+  height: 250px;
+  
+}
+
+.other-images::-webkit-scrollbar {
+  height: 8px;
+}
+
+.other-images::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+
+
+.other-images img:hover {
+  border-color: rgb(73, 67, 50);
+  transform: scale(1.05);
+}
+
+.react-tabs {
+  margin-top: 20px;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 2px solid rgb(163, 157, 138);
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.react-tabs__tab {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.react-tabs__tab--selected {
+  border-bottom: 3px solid rgb(73, 67, 50);
+  color: rgb(73, 67, 50);
+}
+
+.react-tabs__tab-panel {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+.description-tab{
+  font-size: 1.1rem;
+}
+
+.FloorPlanImg {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.map-container {
+  margin-top: 15px;
+}
+
+.map-container iframe {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+}
+
+/*  footer styling */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  color: rgb(234, 228, 213);
+  margin-top: 100px;
+  
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .search-form {
+    padding: 20px;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+
+  .search-form input[type="number"] {
+    width: 100%;
+    margin-right: 0;
   }
 }
+
+
+
+/* ===== Global Responsive Layout (Mobile & Tablet) ===== */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    
+    gap: 10px;
+  }
+
+  /* SEARCH SECTION */
+  #search-bar {
+    padding: 60px 20px;
+  }
+
+  #search-bar h1 {
+    font-size: 2.4rem;
+  }
+
+  #search-bar h3 {
+    font-size: 1rem;
+  }
+
+  .search-form {
+    padding: 20px;
+  }
+
+  /* GALLERY PAGE */
+  .gallery {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROPERTY CARD BUTTONS */
+  .card-buttons {
+    flex-direction: column;
+  }
+
+  .view-property-btn,
+  .favourite-btn {
+    width: 100%;
+  }
+
+  /* FAVOURITES */
+  .favourite-Sidebar {
+    width: 100%;
+    position: static;
+  }
+
+  /* PROPERTY PAGE */
+  .propertyPageSection {
+    margin-top: 120px;
+    padding: 15px;
+  }
+
+  .PropertyDetails h1 {
+    font-size: 2rem;
+  }
+
+  .PropertyDetails h2 {
+    font-size: 1.4rem;
+  }
+
+  .PropertyDetails h3 {
+    font-size: 1.1rem;
+  }
+
+  .propertyGallery {
+    height: auto;
+  }
+
+  .mainImage img {
+    height: auto;
+  }
+
+  .other-images img {
+    width: 150px;
+    height: 200px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+

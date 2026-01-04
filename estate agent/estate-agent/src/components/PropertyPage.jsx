@@ -13,7 +13,7 @@ const PropertyPage = () => {
     .then((data)=>{
       const propertyfound=data.properties.find((p)=>p.id===id);
       setProperty(propertyfound);
-      setThumbnail(propertyfound.images[0]);
+      setThumbnail(propertyfound.thumbnail);
     })
   },[id]);
 
@@ -25,8 +25,8 @@ const PropertyPage = () => {
     <section className="propertyPageSection">
       <div className="PropertyDetails">
         <h1>{property.type}</h1>
-        <h2>{property.price}</h2>
-        <h3>{property.location}</h3>
+        <h2>Price: {property.price}</h2>
+        <h3>Location: {property.location}</h3>
       </div>
       <div className="propertyGallery">
         <div className="mainImage">
@@ -51,7 +51,7 @@ const PropertyPage = () => {
           <Tab>Map</Tab>
         </TabList>
         <TabPanel>
-          <p>
+          <p class="description-tab">
             {property.description}
           </p>
         </TabPanel>
