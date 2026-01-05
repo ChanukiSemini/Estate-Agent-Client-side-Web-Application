@@ -8,7 +8,7 @@ const PropertyPage = () => {
   const [thumbnail,setThumbnail]=useState("");
 
   useEffect(()=>{
-    fetch("/properties.json")
+    fetch(`${import.meta.env.BASE_URL}properties.json`)
     .then((response)=>response.json())
     .then((data)=>{
       const propertyfound=data.properties.find((p)=>p.id===id);
@@ -30,13 +30,13 @@ const PropertyPage = () => {
       </div>
       <div className="propertyGallery">
         <div className="mainImage">
-          <img src={`/${thumbnail}`} alt="thumbnail-Image" width="600" />
+          <img src={`${import.meta.env.BASE_URL}${thumbnail}`} alt="thumbnail-Image" width="600" />
         </div>
         <div className='other-images'>
              {property.images.map((img,index)=>(
               <img
               key={index}
-              src={`/${img}`}
+              src={`${import.meta.env.BASE_URL}${img}`}
               alt={`thumbnail ${index+1}`}
               width="150"
               onClick={()=>setThumbnail(img)}
@@ -56,7 +56,7 @@ const PropertyPage = () => {
           </p>
         </TabPanel>
         <TabPanel>
-          <img src={`/${property.floorplan}`} 
+          <img src={`${import.meta.env.BASE_URL}${property.floorplan}`} 
           alt="Floor Plan" 
           className='FloorPlanImg' 
           width="500"/>

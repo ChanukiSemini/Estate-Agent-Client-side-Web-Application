@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Favourites = ({favourites,removeFavourite,clearFavourites,addToFavourites}) => {
+const Favourites = ({favourites=[],removeFavourite,clearFavourites,addToFavourites}) => {
 
   const handleDrop=(e)=>{
     e.preventDefault();
@@ -34,7 +34,7 @@ const Favourites = ({favourites,removeFavourite,clearFavourites,addToFavourites}
                   <div className="fav-item-info">
                     <div className="fav-info-firstpart">
                       {/*small Image */}
-                      <img src={`/${property.thumbnail}`}
+                      <img src={`${import.meta.env.BASE_URL}${property.thumbnail}`}
                       alt={property.type}
                       className="fav-thumb"/>
 
